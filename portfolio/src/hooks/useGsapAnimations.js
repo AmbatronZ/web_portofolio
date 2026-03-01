@@ -7,15 +7,16 @@ gsap.registerPlugin(ScrollTrigger);
 const useGsapAnimations = () => {
   useLayoutEffect(() => {
     // ── INTRO (tanpa scroll) ──────────────────────────────────────────
+    // Logo pens langsung muncul, scale ringan saja dari 1.1 → 1
     gsap.from(".hero-main-container", {
-      scale: 1.45,
-      duration: 2.8,
+      scale: 1.1,
+      duration: 2,
       ease: "power3.out",
     });
 
     gsap.to(".overlay", {
       opacity: 0,
-      duration: 2.8,
+      duration: 2,
       ease: "power3.out",
       onComplete: () => {
         document.body.style.overflow = "visible";
@@ -45,6 +46,7 @@ const useGsapAnimations = () => {
       },
     });
 
+    // Sinkron dengan CSS: jangan override backgroundPosition
     tl.set(".hero-main-container", { scale: 1.25 });
 
     tl.to(".hero-main-container", { scale: 1, duration: 1 });
@@ -53,9 +55,10 @@ const useGsapAnimations = () => {
 
     tl.to(".hero-main-image", { opacity: 0, duration: 0.9 }, "<+=0.5");
 
+    // Zoom ringan dari 80vh (CSS) ke 45vh
     tl.to(
       ".hero-main-container",
-      { backgroundSize: "45vh", duration: 1.5 },
+      { backgroundSize: "45vh", duration: 1.2 },
       "<+=0.2"
     );
 
@@ -80,18 +83,19 @@ const useGsapAnimations = () => {
       "<1.2"
     );
 
+    // Logo pens_full reveal dengan maskImage
     tl.fromTo(
       ".hero-text-logo",
       {
         opacity: 0,
-        maskImage: `radial-gradient(circle at 50% 145.835%, rgb(255, 255, 255) 36.11%, rgba(255, 255, 255, 0) 68.055%)`,
+        maskImage: `radial-gradient(circle at 50% 145.835%, rgb(0, 0, 0) 36.11%, rgba(0, 0, 0, 0) 68.055%)`,
       },
       {
         opacity: 1,
         maskImage: `radial-gradient(
           circle at 50% 105.594%,
-          rgb(255, 255, 255) 62.9372%,
-          rgba(255, 255, 255, 0) 81.4686%
+          rgb(0, 0, 0) 62.9372%,
+          rgba(0, 0, 0, 0) 81.4686%
         )`,
         duration: 3,
       },
@@ -105,7 +109,7 @@ const useGsapAnimations = () => {
     tl.set(
       ".hero-1-container",
       {
-        maskImage: `radial-gradient(circle at 50% 16.1137vh, rgb(255, 255, 255) 96.1949vh, rgba(255, 255, 255, 0) 112.065vh)`,
+        maskImage: `radial-gradient(circle at 50% 16.1137vh, rgb(0, 0, 0) 96.1949vh, rgba(0, 0, 0, 0) 112.065vh)`,
       },
       "<+=2.1"
     );
@@ -113,7 +117,7 @@ const useGsapAnimations = () => {
     tl.to(
       ".hero-1-container",
       {
-        maskImage: `radial-gradient(circle at 50% -40vh, rgb(255, 255, 255) 0vh, rgba(255, 255, 255, 0) 80vh)`,
+        maskImage: `radial-gradient(circle at 50% -40vh, rgb(0, 0, 0) 0vh, rgba(0, 0, 0, 0) 80vh)`,
         duration: 2,
       },
       "<+=0.2"
@@ -147,7 +151,7 @@ const useGsapAnimations = () => {
       "<1.2"
     );
 
-    // ── CLEANUP saat komponen unmount ─────────────────────────────────
+    // ── CLEANUP ───────────────────────────────────────────────────────
     return () => {
       ScrollTrigger.getAll().forEach((t) => t.kill());
       gsap.killTweensOf("*");
