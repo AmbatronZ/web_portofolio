@@ -65,15 +65,15 @@ const useGsapAnimations = () => {
         backgroundImage: `radial-gradient(
           circle at 50% 200vh,
           rgba(255, 214, 135, 0) 0,
-          rgba(157, 47, 106, 0.5) 90vh,
-          rgba(157, 47, 106, 0.8) 120vh,
+          rgba(81, 112, 255, 0.5) 90vh,
+          rgba(81, 112, 255, 0.8) 120vh,
           rgba(32, 31, 66, 0) 150vh
         )`,
       },
       {
         backgroundImage: `radial-gradient(circle at 50% 3.9575vh, rgb(255, 213, 133) 0vh,
-         rgb(247, 77, 82) 50.011vh,
-          rgb(145, 42, 105) 90.0183vh,
+         rgb(81, 112, 255) 50.011vh,
+          rgb(41, 56, 128) 90.0183vh,
            rgba(32, 31, 66, 0) 140.599vh)`,
         duration: 3,
       },
@@ -132,15 +132,15 @@ const useGsapAnimations = () => {
         backgroundImage: `radial-gradient(
           circle at 50% 200vh,
           rgba(255, 214, 135, 0) 0,
-          rgba(157, 47, 106, 0.5) 90vh,
-          rgba(157, 47, 106, 0.8) 120vh,
+          rgba(81, 112, 255, 0.5) 90vh,
+          rgba(81, 112, 255, 0.8) 120vh,
           rgba(32, 31, 66, 0) 150vh
         )`,
       },
       {
         backgroundImage: `radial-gradient(circle at 50% 3.9575vh, rgb(255, 213, 133) 0vh,
-         rgb(247, 77, 82) 50.011vh,
-          rgb(145, 42, 105) 90.0183vh,
+         rgb(81, 112, 255) 50.011vh,
+          rgb(41, 56, 128) 90.0183vh,
            rgba(32, 31, 66, 0) 140.599vh)`,
         duration: 3,
       },
