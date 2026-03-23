@@ -1,6 +1,7 @@
 const ScrollIndicator = () => {
   return (
     <div className="scroll-indicator">
+      <span className="scroll-indicator-text">Scroll Down</span>
       <svg
         width="34"
         height="14"
