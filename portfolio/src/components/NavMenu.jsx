@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 
-const navItems = ["Home", "About", "Portfolio", "Certificate", "Contact"];
+const navItems = ["Home", "About", "Portfolio", "Certificate", "Contact", "Footer"];
 
 const NavMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

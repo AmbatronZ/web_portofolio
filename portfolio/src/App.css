@@ -177,7 +177,7 @@ body {
 .hamburger-btn {
   position: fixed;
   top: 1.5rem;
-  right: 1.5rem;
+  right: 3rem;
   z-index: 100;
   width: 48px;
   height: 48px;
@@ -258,7 +258,7 @@ body {
 .nav-close-btn {
   position: absolute;
   top: 1.5rem;
-  right: 1.5rem;
+  right: 3rem;
   background: transparent;
   border: none;
   color: rgba(255, 255, 255, 0.5);
