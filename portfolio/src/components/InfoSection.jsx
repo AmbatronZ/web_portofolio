@@ -3,12 +3,13 @@ const InfoSection = () => {
     <div className="hero-2-container">
       <h3>ABOUT</h3>
       <p>
-        Aldino Maytata Prandila, Programer asal Lamongan, adalah mahasiswa PENS
-        yang juga menekuni dunia Game Development, Mobile & Web Apps Development.
+      Aldino Maytata Prandila, a programmer from Lamongan, 
+      is a EEPIS student who also specializes in game development, mobile and web app development.
       </p>
       <p>
-        serta dunia penulisan novel, filsafat dan sastra terutama pemikiran dan
-        biografi para filsuf Barat, dari era klasik hingga modern.
+       He also studies novels, philosophy, and literature, 
+       particularly the thoughts and biographies of Western philosophers, 
+       from the classical to the modern era.
       </p>
     </div>
   );

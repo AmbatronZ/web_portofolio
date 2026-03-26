@@ -19,8 +19,8 @@ const HeroSection = () => {
         <div className="hero-text-logo"></div>
         <div>
           <h3 className="hero-text">
-            MAHASISWA PENS<br />
-            ANGKATAN<br />
+            EEPIS STUDENTS<br />
+            CLASS OF<br />
             24
           </h3>
         </div>
